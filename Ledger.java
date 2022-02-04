@@ -120,7 +120,7 @@ public class Ledger extends UserAmount{
 
         System.out.println("\n--- STEP 10 ---");
         System.out.println("Checking whether the following transaction is valid: \n" +
-                "Input:Alice: 25 | Output: Bob: 10 , Carol: 15" );
+                "Input:Alice: 25 | Output: Bob: 10 , Carol: 15 " );
         Transaction tx3 = new Transaction(new EntryList("Alice",25),
                 new EntryList("Bob",10,"Carol",15));
         System.out.println("Transaction Valid: " + ledger.checkTransactionValid(tx3));
